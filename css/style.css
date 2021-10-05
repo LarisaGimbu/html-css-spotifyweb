@@ -200,6 +200,7 @@ footer{
   margin: 0 auto;
 }
 
+/* footer-left  */
 .footer-left{
   display: flex;
   justify-content: center;
@@ -217,6 +218,50 @@ footer{
   margin-left: 10px;
 }
 
-.song-title{
+.song-title p{
+  font-size: 10px;
+}
 
+/* footer-centre */
+.song-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.song-btn i{
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.song-btn i.fa-play-circle{
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.song-time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-time .line{
+  display: flex;
+  margin: 0 10px;
+}
+
+.song-time .line .lightgrey{
+  width: 80px;
+  height: 3px;
+  background-color: #C1C1C1;
+}
+
+.song-time .line .grey{
+  width: 300px;
+  height: 3px;
+  background-color: #5A5A5A;
+}
+
+.song-time span{
+  font-size: 10px;
 }
