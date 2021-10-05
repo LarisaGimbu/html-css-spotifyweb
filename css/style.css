@@ -38,6 +38,7 @@ aside ul li, nav ul li a, aside ul li a, .crea, .installa, .row p{
 aside{
   width: 200px;
   background-color: black;
+  overflow: auto;
 }
 
 .aside-top{
@@ -141,12 +142,13 @@ nav ul li a{
 }
 
 /* MAIN  */
+
 .row h2{
   font-size: 18px;
 }
 
 .row{
-  margin-left: 15px
+  margin-left: 15px;
 }
 
 .row p{
@@ -160,7 +162,7 @@ nav ul li a{
 
 .box{
   width: 15%;
-  height: 200px;
+  min-height: 200px;
   margin: 20px 10px 20px 0;
 }
 
@@ -216,5 +218,5 @@ footer{
 }
 
 .song-title{
-  
+
 }
