@@ -28,7 +28,7 @@ aside, .container{
   height: calc(100vh - 80px);
 }
 
-aside ul li, nav ul li a, aside ul li a, .crea, .installa{
+aside ul li, nav ul li a, aside ul li a, .crea, .installa, .row p{
   color: #717171;
 }
 
@@ -142,20 +142,26 @@ nav ul li a{
 
 /* MAIN  */
 .row h2{
-  padding-left: 10px; 
   font-size: 18px;
 }
+
+.row{
+  margin-left: 15px
+}
+
+.row p{
+  font-size: 10px;
+ }
 
 .songs{
   display: flex;
   justify-content: flex-start;
-  margin-left: 10px;
 }
 
 .box{
   width: 15%;
   height: 200px;
-  margin: 20px 5px;
+  margin: 20px 10px 20px 0;
 }
 
 .box img{
@@ -167,10 +173,6 @@ nav ul li a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.description p{
- font-size: 10px;
 }
 
 
