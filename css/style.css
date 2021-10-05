@@ -129,36 +129,50 @@ nav ul{
   margin-top: 80px;
   text-align: center;
 }
-
-/* MAIN  */
-.row h2{
-  padding-left: 10px; 
-}
-
-.songs{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.box{
-  width: 15%;
-  height: 200px;
-  background-color: red;
-  margin: 20px 0;
-}
-
 nav ul li{
   display: inline-block;
   list-style: none;
   padding: 10px;
 }
-
 nav ul li a{
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/* MAIN  */
+.row h2{
+  padding-left: 10px; 
+  font-size: 18px;
+}
+
+.songs{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.box{
+  width: 15%;
+  height: 200px;
+  margin: 20px 5px;
+}
+
+.box img{
+  width: 100%;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description p{
+ font-size: 10px;
+}
+
 
 /* FOOTER */
 footer{
