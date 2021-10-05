@@ -7,3 +7,27 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside, .container{
+  float: left;
+  height: calc(100vh - 80px);
+}
+
+
+/* ASIDE  */
+aside{
+  width: 200px;
+  background-color: black;
+}
+
+/* CONTAINER  */
+.container{
+  width: calc(100% - 200px);
+  background-color: #141922;
+}
