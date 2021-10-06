@@ -16,7 +16,7 @@ body{
 }
 
 h3{
-  font-size: 14px;
+  font-size: 13px;
 }
 
 h4{
@@ -62,15 +62,30 @@ aside{
   padding: 10px 0 20px 15px;
 }
 
+.first-list{
+  padding-bottom: 10px;
+}
+
 aside ul li{
-  padding-bottom: 15px;
   list-style: none;
   font-size: 11px;
+  line-height: 30px;
+}
+
+.first-list i{
+  font-size: 17px;
+  padding-right: 5px;
 }
 
 aside ul li a{
   text-decoration: none;
   font-size: 10px;
+}
+
+aside .first-list li:hover {
+  color: white;
+  cursor: pointer;
+  border-left: 2px solid #ADFF2F;
 }
 
 aside h4, aside .crea{
@@ -82,7 +97,14 @@ aside h4{
 }
 
 .crea{
+  display: flex;
+  align-items: center;
   font-size: 12px;
+}
+
+.crea i{
+  font-size: 30px;
+  padding-right: 5px;
 }
 
 /* aside-bottom */
@@ -164,6 +186,7 @@ nav ul li .line{
   width: 20px;
   height: 1px;
   background-color: #ADFF2F;
+  margin-top: 2px;
 }
 
 nav ul li:hover{
@@ -211,7 +234,7 @@ nav ul li:hover .line{
   position: absolute;
   top: 0;
   width: 100%;
-  height: 79%;
+  height: 70%;
   background-color: rgba(0, 0, 0, 0.61);
 }
 
@@ -229,6 +252,11 @@ nav ul li:hover .line{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.description h3{
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .songs.artist img, .songs.artist .box .play{
