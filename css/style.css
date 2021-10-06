@@ -28,7 +28,7 @@ aside, .container{
   height: calc(100vh - 80px);
 }
 
-aside ul li, nav ul li, aside ul li a, .crea, .installa, .row p{
+aside ul li, nav ul li, aside ul li a, .crea, .installa, .row p, .song-title p, .footer-left i{
   color: #717171;
 }
 
@@ -82,10 +82,15 @@ aside ul li a{
   font-size: 10px;
 }
 
-aside .first-list li:hover {
+aside li:hover{
   color: white;
   cursor: pointer;
   border-left: 2px solid #ADFF2F;
+  padding-left: 18px;
+}
+
+aside li:hover a{
+  color: white;
 }
 
 aside h4, aside .crea{
@@ -303,10 +308,15 @@ footer{
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
+  padding-right: 20px;
 }
 
 .song-title p{
   font-size: 10px;
+}
+
+.footer-left i{
+  padding-left: 10px;
 }
 
 /* footer-centre */
