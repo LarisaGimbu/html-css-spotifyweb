@@ -14,144 +14,155 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="clearfix">
-  <aside>
-    <div class="aside-top">
-      <div class="logo">
-        <img src="img/logo.svg" alt="Spotify">
-      </div>
-      <ul class="first-list">
-        <li>Home</li>
-        <li>Cerca</li>
-        <li>La tua libreria</li>
-      </ul>
-      <h4>Playlist</h4>
-      <div class="crea">Crea Playlist</div>
-      <ul class="second-list">
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-      </ul>
-    </div>
-    <div class="aside-bottom">
-      <div class="installa">Installa app</div>
-      <div class="user">John Doe</div>
-    </div>
-  </aside>
-
-  <div class="container">
-    <div class="upgrade">
-      <a class="btn" href="#">Effettua l'upgrade</a>
-    </div>
-
-    <nav>
-      <ul>
-        <li><a href="#">A</a></li>
-        <li><a href="#">B</a></li>
-        <li><a href="#">C</a></li>
-        <li><a href="#">D</a></li>
-        <li><a href="#">E</a></li>
-        <li><a href="#">F</a></li>
-      </ul>
-    </nav>
-
-    <main>
-      <div class="row">
-        <h2>Recently played</h2>
-        <div class="songs">
-          <div class="box">
-            <img src="img/metal_lifting.jpg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
-          </div>
-          <div class="box">
-            <img src="img/stranger.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
-          </div>
-          <div class="box">
-            <img src="img/aquietplace.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
-          </div>
-          <div class="box">
-            <img src="img/split.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
-          </div>
-          <div class="box">
-            <img src="img/cure.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
-          </div>
-          <div class="box">
-            <img src="img/sinister.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
-          </div>
-
+<body>
+  <main class="clearfix"> 
+    <aside>
+      <div class="aside-top">
+        <div class="logo">
+          <img src="img/logo.svg" alt="Spotify">
         </div>
+        <ul class="first-list">
+          <li>Home</li>
+          <li>Cerca</li>
+          <li>La tua libreria</li>
+        </ul>
+        <h4>Playlist</h4>
+        <div class="crea">Crea Playlist</div>
+        <ul class="second-list">
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+        </ul>
       </div>
-      <div class="row">
-        <h2>Creato per John Doe</h2>
-        <p>Più ascolti, più acuurati saranno i suggerimenti.</p>
-        <div class="songs">
-          <div class="box">
-            <img src="img/radar.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
-          </div>
-          <div class="box">
-            <img src="img/mixdaily.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
+      <div class="aside-bottom">
+        <div class="installa">Installa app</div>
+        <div class="user">John Doe</div>
+      </div>
+    </aside>
+
+    <div class="container">
+      <div class="upgrade">
+        <a class="btn" href="#">Effettua l'upgrade</a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">A</a></li>
+          <li><a href="#">B</a></li>
+          <li><a href="#">C</a></li>
+          <li><a href="#">D</a></li>
+          <li><a href="#">E</a></li>
+          <li><a href="#">F</a></li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <div class="row">
+          <h2>Recently played</h2>
+          <div class="songs">
+            <div class="box">
+              <img src="img/metal_lifting.jpg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+            <div class="box">
+              <img src="img/stranger.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+            <div class="box">
+              <img src="img/aquietplace.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+            <div class="box">
+              <img src="img/split.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+            <div class="box">
+              <img src="img/cure.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+            <div class="box">
+              <img src="img/sinister.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+
           </div>
         </div>
-      </div>
-      <div class="row">
-        <h2>Artisti più popolari</h2>
-        <p>Più ascolti, più acuurati saranno i suggerimenti.</p>
-        <div class="songs artist">
-          <div class="box">
-            <img src="img/radar.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
-          </div>
-          <div class="box">
-            <img src="img/mixdaily.jpeg" alt="">
-            <div class="description">
-              <h3>Heavy Metal</h3>
-              <p>Subtitle</p>
-            </div> 
+        <div class="row">
+          <h2>Creato per John Doe</h2>
+          <p>Più ascolti, più acuurati saranno i suggerimenti.</p>
+          <div class="songs">
+            <div class="box">
+              <img src="img/radar.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+            <div class="box">
+              <img src="img/mixdaily.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
           </div>
         </div>
+        <div class="row">
+          <h2>Artisti più popolari</h2>
+          <p>Più ascolti, più acuurati saranno i suggerimenti.</p>
+          <div class="songs artist">
+            <div class="box">
+              <img src="img/radar.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+            <div class="box">
+              <img src="img/mixdaily.jpeg" alt="">
+              <div class="play"><i class="far fa-play-circle"></i></div>
+              <div class="description">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+      
       </div>
-     
-    </main>
-  </div>
-
+    </div>
+  </main>   
   <footer>
     <div class="footer-container">
       <div class="footer-left">

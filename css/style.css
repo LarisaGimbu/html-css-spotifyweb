@@ -40,7 +40,8 @@ aside ul li, nav ul li a, aside ul li a, .crea, .installa, .row p{
   background-color: #C1C1C1;
 }
 
-/* ASIDE  */
+/* MAIN  */
+/* aside  */
 aside{
   width: 200px;
   background-color: black;
@@ -103,7 +104,7 @@ aside h4{
 }
 
 
-/* CONTAINER  */
+/* conteiner  */
 .container, .upgrade{
   width: calc(100% - 200px);
 }
@@ -122,6 +123,7 @@ aside h4{
   top: 0;
   height: 80px;
   background-color: rgba(0, 0, 0, 0.432);
+  z-index: 50;
 }
 
 .upgrade .btn{
@@ -151,7 +153,7 @@ nav ul li a{
   text-transform: uppercase;
 }
 
-/* MAIN  */
+/* content  */
 
 .row h2{
   font-size: 18px;
@@ -171,6 +173,7 @@ nav ul li a{
 }
 
 .box{
+  position: relative;
   width: 15%;
   min-height: 200px;
   margin: 20px 10px 20px 0;
@@ -180,6 +183,26 @@ nav ul li a{
   width: 100%;
 }
 
+.box .play{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 79%;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.box .play i{
+  font-size: 3vw;
+}
+
+.box:hover .play{
+  display: flex;
+  cursor: pointer;
+}
+
 .description{
   display: flex;
   flex-direction: column;
@@ -187,7 +210,7 @@ nav ul li a{
   align-items: center;
 }
 
-.songs.artist img{
+.songs.artist img, .songs.artist .box .play{
   border-radius: 50%;
 }
 
