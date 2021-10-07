@@ -1,3 +1,4 @@
+/* GENERAL */
 *{
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ body{
   clear: both;
 }
 
+/* UTILITY  */
 h3{
   font-size: 13px;
 }
@@ -28,11 +30,11 @@ aside, .container{
   height: calc(100vh - 80px);
 }
 
-aside ul li, nav ul li, aside ul li a, .crea, .installa, .row p, .song-title p, .footer-left i{
+.grey, .grey li, .grey li a, .crea, .row p, .footer-left i{
   color: #717171;
 }
 
-.grey{
+.line .grey{
   background-color: #5A5A5A;
 }
 
@@ -44,92 +46,79 @@ aside ul li, nav ul li, aside ul li a, .crea, .installa, .row p, .song-title p, 
 }
 
 /* MAIN  */
-/* aside  */
 aside{
   width: 200px;
   background-color: black;
   overflow: hidden;
 }
-
+/* aside-top  */
 .aside-top{
   height: calc(100% - 50px);
   min-height: 300px;
   overflow: hidden;
 }
-
 .logo img, aside ul li, aside h4, aside .crea{
   padding-left: 20px;
 }
-
 .logo img{
   width: 130px;
   padding: 10px 0 20px 15px;
 }
-
 .logo img:last-child{
   display: none;
 }
-
-.first-list{
-  padding-bottom: 10px;
-}
-
 aside ul li{
   list-style: none;
   font-size: 11px;
   line-height: 30px;
 }
-
+/* first-list  */
 .first-list svg{
   width: 30px;
   padding-right: 5px;
   vertical-align: middle;
   filter: invert(0.5);
 }
-
+.first-list{
+  padding-bottom: 10px;
+}
+/* second-list */
+.second-list{
+  overflow: auto;
+  height: 50%;
+}
 aside ul li a{
   text-decoration: none;
   font-size: 10px;
 }
-
+/* aside-hover  */
 aside li:hover, aside .crea:hover{
   color: white;
   cursor: pointer;
   border-left: 2px solid #ADFF2F;
   padding-left: 18px;
 }
-
-aside li:hover svg{
-  filter: invert(0);
-}
-
 aside li:hover a{
   color: white;
 }
-
+aside li:hover svg{
+  filter: invert(0);
+}
+/* crea  */
 aside h4, aside .crea{
   padding-bottom: 15px;
 }
-
 aside h4{
   text-transform: uppercase;
 }
-
 .crea{
   display: flex;
   align-items: center;
   font-size: 12px;
 }
-
 .crea i{
   font-size: 30px;
   padding-right: 5px;
-}
-
-.second-list{
-  overflow: auto;
-  height: 50%;
-  padding-bottom: 50px;
 }
 
 /* aside-bottom */
@@ -138,37 +127,32 @@ aside h4{
   height: 50px;
   margin: 0 auto;
 }
-
 .aside-bottom svg{
   width: 15px;
   vertical-align: middle;
   color: #5A5A5A;
 }
-
 .aside-bottom .installa{
   font-size: 10px;
   border-bottom: 1px solid #717171;
   padding-bottom: 5px;
 }
-
 .aside-bottom .user{
   font-size: 12px;
   padding: 5px 0;
 }
-
 .aside-bottom .user svg{
   background-color: #717171;
   border-radius: 50%;
   color: white;
 }
-
 .aside-bottom div:hover{
   color: white;
   cursor: pointer;
 }
 
 
-/* conteiner  */
+/* conteiner-right-main  */
 .container, .upgrade{
   width: calc(100% - 200px);
   background-color: #141922;
@@ -176,7 +160,7 @@ aside h4{
 }
 
 
-/* upgrade */
+/* upgrade-fixed */
 .upgrade{
   display: flex;
   justify-content: flex-end;
@@ -187,7 +171,6 @@ aside h4{
   background-color: rgba(0, 0, 0, 0.432);
   z-index: 50;
 }
-
 .upgrade .btn{
   text-decoration: none;
   color: white;
@@ -198,10 +181,10 @@ aside h4{
   border-radius: 25px;
   margin-right: 25px;
 }
-
 .upgrade .btn:hover{
   transform: scale(1.1);
 }
+
 
 /* nav */
 nav{
@@ -220,8 +203,6 @@ nav ul li{
   font-size: 11px;
   font-weight: bold;
 }
-
-
 nav ul li .line{
   display: none;
   position: absolute;
@@ -232,29 +213,25 @@ nav ul li .line{
   background-color: #ADFF2F;
   margin-top: 2px;
 }
-
 nav ul li:hover{
   cursor: pointer;
   color: white;
 }
-
 nav ul li:hover .line{
   display: block;
 }
+
 
 /* content  */
 .row{
   margin-left: 15px;
 }
-
 .row h2{
   font-size: 18px;
 }
-
 .row p{
   font-size: 10px;
  }
-
 .songs{
   display: flex;
   justify-content: flex-start;
@@ -266,16 +243,15 @@ nav ul li:hover .line{
   min-height: 200px;
   margin: 20px 10px 20px 0;
 }
-
 .box .play-container{
   position: relative;
   width: 100%;
 }
-
 .box img{
   width: 100%;
 }
 
+/* box-hover  */
 .box .play{
   display: none;
   justify-content: center;
@@ -286,11 +262,9 @@ nav ul li:hover .line{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.61);
 }
-
 .box .play i{
   font-size: 3vw;
 }
-
 .box:hover .play{
   display: flex;
   cursor: pointer;
@@ -303,12 +277,10 @@ nav ul li:hover .line{
   align-items: center;
   padding-top: 10px;
 }
-
 .description h3{
   text-align: center;
   padding-bottom: 5px;
 }
-
 .songs.artist img, .songs.artist .box .play{
   border-radius: 50%;
 }
@@ -320,7 +292,6 @@ footer{
   height: 80px;
   background-color: #282828;
 }
-
 .footer-container{
   display: flex;
   justify-content: space-between;
@@ -329,7 +300,6 @@ footer{
   height: 100%;
   margin: 0 auto;
 }
-
 .line span{
   border-radius: 50px;
   height: 4px;
@@ -341,12 +311,10 @@ footer{
   align-items: center;
   width: 25%;
 }
-
 .footer-left img{
   min-width: 25px;
   max-width: 12%;
 }
-
 .song-title{
   display: flex;
   flex-direction: column;
@@ -354,29 +322,27 @@ footer{
   margin-left: 10px;
   padding-right: 10%;
 }
-
 .song-title p{
   font-size: 10px;
 }
+.footer-left i{
+  padding-left: 10px;
+}
 
+/* footer-left-hover  */
 .song-title p:hover, .footer-left i:hover{
   color: white;
   cursor: pointer;
 }
-
 .song-title p:hover{
   text-decoration: underline; 
 }
 
-.footer-left i{
-  padding-left: 10px;
-}
 
 /* footer-centre */
 .footer-center{
   width: 40%;
 }
-
 .song-btn{
   display: flex;
   justify-content: center;
@@ -387,7 +353,6 @@ footer{
   padding: 0 10px;
   font-size: 14px;
 }
-
 .song-btn i.fa-play-circle{
   font-size: 20px;
   padding: 0 15px;
@@ -398,46 +363,39 @@ footer{
   justify-content: center;
   align-items: center;
 }
-
+.song-time span{
+  font-size: 10px;
+}
 .song-time .line{
   display: flex;
   margin: 0 10px;
   width: 100%;
 }
-
-
 .song-time .line .lightgrey{
   width: 20%;  
 }
-
-.line .lightgrey i{
-  display: none;
-}
-
-.line:hover{
-  cursor: pointer;
-}
-
-.line:hover .lightgrey{
-  background-color: #ADFF2F;
-}
-
-.line:hover i{
-  display: block;
-}
-
 .song-time .line .grey{
   width: 80%;
 }
-
-.song-time span{
-  font-size: 10px;
+/* line-hover */
+.line .lightgrey i{
+  display: none;
+}
+.line:hover{
+  cursor: pointer;
+}
+.line:hover .lightgrey{
+  background-color: #ADFF2F;
+}
+.line:hover i{
+  display: block;
 }
 
 .fa-play-circle:hover{
   transform: scale(1.3);
   cursor: pointer;
 }
+
 
 /* footer-right */
 .footer-right{
@@ -446,26 +404,20 @@ footer{
   align-items: center;
   width: 20%;
 }
-
 .footer-right i{
   margin-right: 10px;
   font-size: 14px;
 }
-
 .footer-right .line{
   display: flex;
   width: 30%;
 }
-
 .footer-right .line i{
   margin-right: 0;
 }
-
-
 .footer-right .line .lightgrey{
   width: 30%;
 }
-
 .footer-right .line .grey{
   width: 70%;
 }
@@ -526,5 +478,11 @@ footer{
   }
   .aside-bottom .installa{
     border-bottom: 0;
+  }
+}
+
+@media screen and (max-height: 158px){
+  .upgrade{
+    display: none;
   }
 }

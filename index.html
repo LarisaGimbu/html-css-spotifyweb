@@ -15,22 +15,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <!-- MAIN  -->
   <main class="clearfix"> 
+    <!-- aside  -->
     <aside>
+      <!-- aside-top  -->
       <div class="aside-top">
         <div class="logo">
           <img src="img/logo.svg" alt="Spotify">
           <img src="img/logo-small.svg" alt="">
         </div>
-        <ul class="first-list">
+
+        <!-- first-list  -->
+        <ul class="first-list grey">
           <li><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg> 
           <span>Home</span></li>
           <li><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg><span>Cerca</span></li>
           <li><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg><span>La tua libreria</span> </li>
         </ul>
         <h4>Playlist</h4>
+        <!-- crea  -->
         <div class="crea"><i class="fas fa-plus-square"></i>Crea Playlist</div>
-        <ul class="second-list">
+        <!-- second-list  -->
+        <ul class="second-list grey">
           <li><a href="#">Nome Playlist</a></li>
           <li><a href="#">Nome Playlist</a></li>
           <li><a href="#">Nome Playlist</a></li>
@@ -40,8 +47,10 @@
           <li><a href="#">Nome Playlist</a></li>
         </ul>
       </div>
+
+      <!-- aside-bottom -->
       <div class="aside-bottom">
-        <div class="installa">
+        <div class="installa grey">
           <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#ffffff" fill-rule="evenodd"/></svg> <span> Installa app</span>
         </div>
         <div class="user">
@@ -51,13 +60,16 @@
       </div>
     </aside>
 
+    <!-- container -->
     <div class="container">
+      <!-- upgrade fixed -->
       <div class="upgrade">
         <a class="btn" href="#">Effettua l'upgrade</a>
       </div>
 
+      <!-- nav  -->
       <nav>
-        <ul>
+        <ul class="grey">
           <li>
             <span>in evidenza</span>
             <div class="line"></div>
@@ -79,8 +91,11 @@
             <div class="line"></div></li>
         </ul>
       </nav>
+      <!-- /nav  -->
 
+      <!-- content  -->
       <div class="content">
+        <!-- recently-played-row  -->
         <div class="row">
           <h2>Recently played</h2>
           <div class="songs">
@@ -89,70 +104,71 @@
                 <img src="img/metal_lifting.jpg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>Heavy Metal</h3>
                 <p>Subtitle</p>
               </div> 
             </div>
+
             <div class="box">
               <div class="play-container">
                 <img src="img/stranger.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>Stranger Thrings, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                 <p>Kyle Dixon & Michael Stein</p>
               </div> 
             </div>
+
             <div class="box">
               <div class="play-container">
                 <img src="img/aquietplace.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>A quiet place</h3>
                 <p>Subtitle</p>
               </div> 
             </div>
+
             <div class="box">
               <div class="play-container">
                 <img src="img/split.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>Split</h3>
                 <p>Subtitle</p>
               </div> 
             </div>
+            
             <div class="box">
               <div class="play-container">
                 <img src="img/cure.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>A cure for wellness</h3>
                 <p>Subtitle</p>
               </div> 
             </div>
+
             <div class="box">
               <div class="play-container">
                 <img src="img/sinister.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>Sinister</h3>
                 <p>Subtitle</p>
               </div> 
             </div>
-
           </div>
         </div>
+        <!-- /recently-played-row  -->
+
+        <!-- creato-per-user-row -->
         <div class="row">
           <h2>Creato per John Doe</h2>
           <p>Più ascolti, più acuurati saranno i suggerimenti.</p>
@@ -162,23 +178,25 @@
                 <img src="img/radar.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>Release Radar</h3>
               </div> 
             </div>
+
             <div class="box">
               <div class="play-container">
                 <img src="img/mixdaily.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>Daily Mix 1</h3>
               </div> 
             </div>
           </div>
         </div>
+        <!-- /creato-per-user-row -->
+
+        <!-- artisti-più-ascoltati-row -->
         <div class="row">
           <h2>Artisti più popolari</h2>
           <p>Più ascolti, più acuurati saranno i suggerimenti.</p>
@@ -188,39 +206,45 @@
                 <img src="img/youg.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>Youg</h3>
               </div> 
             </div>
+
             <div class="box">
               <div class="play-container">
                 <img src="img/einaudi.jpeg" alt="">
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
-              
               <div class="description">
                 <h3>Einaudi</h3>
               </div> 
             </div>
           </div>
         </div>
-      
+        <!-- /artisti-più-ascoltati-row -->
+
       </div>
+      <!-- /content  -->
     </div>
-  </main>   
+    <!-- /container -->
+  </main> 
+  
+  <!-- FOOTER  -->
   <footer>
     <div class="footer-container">
+      <!-- footer-left  -->
       <div class="footer-left">
         <img src="img/sinister.jpeg" alt="Sinister-album">
         <div class="song-title">
           <h5>Sinister</h5>
-          <p>Brano Nome</p>
+          <p class="grey">Brano Nome</p>
         </div>
         <i class="far fa-heart"></i>
         <i class="far fa-folder"></i>
-        
       </div>
+
+      <!-- footer-center  -->
       <div class="footer-center">
         <div class="song-btn">
           <i class="fas fa-random"></i>
@@ -235,11 +259,12 @@
             <span class="lightgrey"><i class="fas fa-circle"></i></span>
             <span class="grey"></span>
           </div>
-          
           <span>4:35</span>
         </div>
         
       </div>
+
+      <!-- footer-right  -->
       <div class="footer-right">
         <i class="fas fa-list-ul"></i>
         <i class="fas fa-desktop"></i>
@@ -249,8 +274,8 @@
           <span class="grey"></span>
         </div>
       </div>
-    </div>
-    
+      
+    </div> 
   </footer>
   
 
