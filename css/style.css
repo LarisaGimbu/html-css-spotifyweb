@@ -30,7 +30,7 @@ aside, .container{
   height: calc(100vh - 80px);
 }
 
-.grey, .grey li, .grey li a, .crea, .row p, .footer-left i{
+.grey, .grey li a, .crea, .row p, .footer-left i{
   color: #717171;
 }
 
@@ -91,8 +91,11 @@ aside ul li a{
   text-decoration: none;
   font-size: 10px;
 }
+.active svg{
+  filter: invert(0);
+}
 /* aside-hover  */
-aside li:hover, aside .crea:hover{
+aside li:hover, aside .crea:hover, aside .active{
   color: white;
   cursor: pointer;
   border-left: 2px solid #ADFF2F;
@@ -212,6 +215,9 @@ nav ul li .line{
   height: 1px;
   background-color: #ADFF2F;
   margin-top: 2px;
+}
+nav li.active .line{
+  display: block;
 }
 nav ul li:hover{
   cursor: pointer;
