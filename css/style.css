@@ -48,6 +48,7 @@ aside ul li, nav ul li, aside ul li a, .crea, .installa, .row p, .song-title p, 
 aside{
   width: 200px;
   background-color: black;
+  overflow: hidden;
 }
 
 .aside-top{
@@ -113,6 +114,11 @@ aside h4{
 .crea i{
   font-size: 30px;
   padding-right: 5px;
+}
+
+.second-list{
+  overflow: auto;
+  height: 50%;
 }
 
 /* aside-bottom */
@@ -288,8 +294,6 @@ nav ul li:hover .line{
 
 /* FOOTER */
 footer{
-  position: fixed;
-  bottom: 0;
   width: 100%;
   height: 80px;
   background-color: #282828;
@@ -422,6 +426,10 @@ footer{
 .footer-right .line{
   display: flex;
   margin: 0 10px;
+}
+
+.footer-right .line i{
+  margin-right: 0;
 }
 
 
