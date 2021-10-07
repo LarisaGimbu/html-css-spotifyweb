@@ -240,13 +240,12 @@ nav ul li:hover .line{
 }
 
 /* content  */
+.row{
+  margin-left: 15px;
+}
 
 .row h2{
   font-size: 18px;
-}
-
-.row{
-  margin-left: 15px;
 }
 
 .row p{
@@ -299,6 +298,7 @@ nav ul li:hover .line{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 }
 
 .description h3{
@@ -335,12 +335,13 @@ footer{
 /* footer-left  */
 .footer-left{
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 25%;
 }
 
 .footer-left img{
-  width: 40px;
+  min-width: 25px;
+  max-width: 12%;
 }
 
 .song-title{
@@ -348,7 +349,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
-  padding-right: 20px;
+  padding-right: 10%;
 }
 
 .song-title p{
@@ -369,6 +370,10 @@ footer{
 }
 
 /* footer-centre */
+.footer-center{
+  width: 40%;
+}
+
 .song-btn{
   display: flex;
   justify-content: center;
@@ -394,11 +399,12 @@ footer{
 .song-time .line{
   display: flex;
   margin: 0 10px;
+  width: 100%;
 }
 
 
 .song-time .line .lightgrey{
-  width: 80px;  
+  width: 20%;  
 }
 
 .line .lightgrey i{
@@ -418,7 +424,7 @@ footer{
 }
 
 .song-time .line .grey{
-  width: 300px;
+  width: 80%;
 }
 
 .song-time span{
@@ -433,8 +439,9 @@ footer{
 /* footer-right */
 .footer-right{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  width: 20%;
 }
 
 .footer-right i{
@@ -444,7 +451,7 @@ footer{
 
 .footer-right .line{
   display: flex;
-  margin: 0 10px;
+  width: 30%;
 }
 
 .footer-right .line i{
@@ -453,9 +460,11 @@ footer{
 
 
 .footer-right .line .lightgrey{
-  width: 30px;
+  width: 30%;
 }
 
 .footer-right .line .grey{
-  width: 100px;
+  width: 70%;
 }
+
+/* RESPONSIVE */
