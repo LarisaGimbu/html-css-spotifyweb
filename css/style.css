@@ -260,7 +260,8 @@ nav ul li:hover .line{
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.61);
+  background-color: none;
+  transition: all 0.5s;
 }
 .box .play i{
   font-size: 3vw;
@@ -268,6 +269,10 @@ nav ul li:hover .line{
 .box:hover .play{
   display: flex;
   cursor: pointer;
+}
+
+.box .play:hover{
+  background-color: rgba(0, 0, 0, 0.61);
 }
 
 .description{
